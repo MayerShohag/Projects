@@ -1,0 +1,247 @@
+:root {
+    --color-a: black;
+    --color-b: #fff;
+    --color-c: gray;
+    --color-d: #764ecb;
+    --color-e: #111;
+}
+@media (min-width: 600px) {
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .skills {
+        width: 260px;
+    }
+
+    .project-section__more-project {
+        width: 250px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .common__para {
+        letter-spacing: 2px;
+        font-size: 1.6rem;
+    }
+
+    .common__subtitle {
+        letter-spacing: 2px;
+        font-size: 2.5rem;
+    }
+
+    .global-container {
+        box-shadow: 0 0 20px gray;
+        border: 3px solid var(--color-d);
+    }
+
+    /* header section start from here  */
+    header {
+        position: sticky;
+        top: -1px;
+        z-index: 1000;
+    }
+
+    .navigation__toggle--links {
+        display: flex;
+        width: 705px;
+        margin: 0 auto;
+        gap: 15px;
+        justify-content: center;
+        background-color: #111;
+        border-radius: 50px;
+        list-style-type: none;
+    }
+
+    .navigation__toggle--links>li>a {
+        padding: 5px 10.5px;
+        background-color: #333;
+        border-radius: 50px;
+        border: none;
+    }
+
+    /* header section ends here */
+
+    /* about section starts from here  */
+    .about-section {
+        padding-top: 40px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        flex-direction: row;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.92)), url(./images/star-background.jpg);
+        background-size: cover;
+    }
+
+    .about-section__image {
+        width: 50%;
+        height: 100%;
+    }
+
+
+
+    .about-section__text {
+        width: 50%;
+        text-align: left;
+    }
+
+    .about-section__title {
+        font-size: 1.5rem;
+    }
+
+    .about-section__subtitle {
+        font-size: 3rem;
+        line-height: 60px;
+        margin: 15px 0;
+    }
+
+    .mern {
+        font-size: 4.5rem;
+    }
+
+    .about-section__button>a {
+        transform: scale(1.1);
+        margin-left: 10px;
+    }
+
+    .about-section__social-icons {
+        display: flex;
+        gap: 30px;
+        margin-left: 10px;
+        justify-content: flex-start;
+    }
+
+    .about-section__social-icons>a>i {
+        width: 50px;
+        height: 50px;
+        font-size: 2rem;
+    }
+
+    /* about section ends here */
+
+
+    /* project section starts from here  */
+    .project__text-buttons {
+        flex-direction: row;
+    }
+
+    .project__btn {
+        width: 50%;
+    }
+
+    .project__btn>button {
+        font-size: 0.9rem;
+    }
+
+    .project__btn>button>a {
+        padding: 15px;
+    }
+
+    /* project section ends here */
+
+
+    /* contact section starts from here  */
+    .contact-section-image {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* contact section ends here */
+}
+
+
+@media (min-width: 1024px) {
+
+    .global-row {
+        max-width: 1550px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .about-section,
+    .project-section,
+    .skills-section,
+    .blog-section,
+    .contact-section {
+        padding: 60px 50px;
+    }
+
+    .about-section__subtitle {
+        font-size: 3rem;
+        line-height: 60px;
+    }
+
+    .about-section {
+        justify-content: space-between;
+    }
+
+    .about-section__image {
+        width: 38%;
+    }
+
+    /* project section starts from here  */
+    .projects {
+        display: flex;
+        gap: 20px;
+    }
+
+    .project__image {
+        width: 50%;
+    }
+
+    .project__image>img {
+        object-fit: cover;
+    }
+
+    .project__text {
+        width: 50%;
+    }
+
+    .project__text-describe>p {
+        overflow: hidden;
+        height: 100px;
+        width: 100%;
+        text-align: justify;
+        margin: 10px 0;
+    }
+
+    /* project section ends here */
+
+
+
+    /* blog section starts from here  */
+    .blog-container {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .blogs {
+        width: 400px;
+    }
+
+    /* blog section ends here */
+
+
+    /* contact section starts from here  */
+    .contact-container {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        padding: 0 50px;
+    }
+
+    .contact-section-image {
+        width: 50%;
+    }
+
+    .contact-section__form {
+        width: 50%;
+    }
+
+    /* contact section ends here */
+
+}
