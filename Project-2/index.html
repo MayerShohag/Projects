@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoMo's Counter || Magura</title>
+    <link rel="shortcut icon" href="image/icon.webp" type="image/x-icon" />
+
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font awesome link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-light">
+    <!-- header section start from here  -->
+    <header class="sticky-lg-top">
+      <nav class="navbar navbar-expand-lg shadow-sm">
+        <div class="container">
+          <div class="company-icon-section">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+              <img
+                src="./image/icon.webp"
+                class="icon-img"
+                alt="Cloud Serface"
+              />
+              <span class="company-title text-white">MoMo's Counter</span>
+            </a>
+          </div>
+          <section class="navigation-section">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav gap-2 me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link custom-link rounded-5 active"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link custom-link rounded-5" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link custom-link rounded-5" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link custom-link rounded-5" href="#">Outlet</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link custom-link rounded-5" href="#">Contact</a>
+                </li>
+                <form class="d-flex" role="search">
+                  <button class="btn btn-outline-light text-dark rounded-5" type="submit">
+                    Order Now
+                  </button>
+                </form>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </nav>
+    </header>
+    <!-- header section ends here -->
+
+    <!-- hero section start from here  -->
+    <section class="hero-section">
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active slider-image-section"
+            data-bs-interval="3000"
+          >
+            <img
+              src="./image/momo-1.webp"
+              class="d-block w-100 food-img"
+              alt="Food 1"
+            />
+            <div class="carousel-caption d-none d-md-block my-5">
+              <h3 class="h3-text">Delicious <span class="span h3-text fw-bold">MoMo's</span></h3>
+              <p class="fs-2">Berger from MoMo's Counter</p>
+              <p class="w-75 mx-auto fs-5">
+                Burgers have long been a beloved staple in global cuisine,
+                celebrated for their versatility and rich flavors. Whether it’s
+                the classic cheeseburger or inventive gourmet varieties, the art
+                of crafting the perfect burger requires a blend of quality
+                ingredients, cooking techniques
+              </p>
+              <button class="btn btn-primary mb-5 border-2 text-white">
+                Order Now
+              </button>
+            </div>
+          </div>
+          <div
+            class="carousel-item slider-image-section"
+            data-bs-interval="3000"
+          >
+            <img
+              src="./image/momo-2.webp"
+              class="d-block w-100 food-img"
+              alt="Food 2"
+            />
+            <div class="carousel-caption d-none d-md-block my-5">
+              <h3 class="h3-text">Delicious <span class="span h3-text fw-bold">MoMo's</span></h3>
+              <p class="fs-2">Berger from MoMo's Counter</p>
+              <p class="w-75 mx-auto fs-5">
+                Burgers have long been a beloved staple in global cuisine,
+                celebrated for their versatility and rich flavors. Whether it’s
+                the classic cheeseburger or inventive gourmet varieties, the art
+                of crafting the perfect burger requires a blend of quality
+                ingredients, cooking techniques
+              </p>
+              <button class="btn btn-primary mb-5 border-2 text-white">
+                Order Now
+              </button>
+            </div>
+          </div>
+          <div
+            class="carousel-item slider-image-section"
+            data-bs-interval="3000"
+          >
+            <img
+              src="./image/momo-3.webp"
+              class="d-block w-100 food-img"
+              alt="Food 3"
+            />
+            <div class="carousel-caption d-none d-md-block my-5">
+              <h3 class="h3-text">Delicious <span class="span h3-text fw-bold">MoMo's</span></h3>
+              <p class="fs-2">Berger from MoMo's Counter</p>
+              <p class="w-75 mx-auto fs-5">
+                Burgers have long been a beloved staple in global cuisine,
+                celebrated for their versatility and rich flavors. Whether it’s
+                the classic cheeseburger or inventive gourmet varieties, the art
+                of crafting the perfect burger requires a blend of quality
+                ingredients, cooking techniques
+              </p>
+              <button class="btn btn-primary mb-5 border-2 text-white">
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- hero section ends here -->
+
+    <!-- Services section start from here  -->
+    <section class="berger-item-section">
+      <h3 class="berger-items-title fs-1 text-center mt-5">Our Menu</h3>
+      <ul class="nav justify-content-center gap-2">
+        <li class="nav-item">
+          <a
+            class="nav-link active bg-primary-subtle rounded-5 text-black custom-link"
+            aria-current="page"
+            href="#"
+            >All</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link rounded-5 custom-link text-black" href="#"
+            >Berger</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link rounded-5 custom-link text-black" href="#"
+            >Pizza</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link rounded-5 custom-link text-black" href="#"
+            >Pasta</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link rounded-5 custom-link text-black" href="#"
+            >Fries</a
+          >
+        </li>
+      </ul>
+
+      <section
+        class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 container mx-auto my-4 d-flex justify-content-center gap-4"
+      >
+        <div class="card pt-2" style="width: 18rem">
+          <img src="./image/momo-4.webp" class="custom-image" alt="berger-1" />
+          <div class="card-body">
+            <h5 class="card-title fs-4">Delicious Berger</h5>
+            <p class="card-text">
+              Burgers have transcended their status as simple fast food to
+              become a beloved culinary masterpiece that satisfies cravings and
+              brings joy to many.
+            </p>
+            <a href="#" class="btn btn-dark">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card pt-2" style="width: 18rem">
+          <img src="./image/momo-5.webp" class="custom-image" alt="berger-1" />
+          <div class="card-body">
+            <h5 class="card-title fs-4">Delicious Berger</h5>
+            <p class="card-text">
+              Burgers have transcended their status as simple fast food to
+              become a beloved culinary masterpiece that satisfies cravings and
+              brings joy to many.
+            </p>
+            <a href="#" class="btn btn-dark">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card pt-2" style="width: 18rem">
+          <img src="./image/momo-2.webp" class="custom-image" alt="berger-1" />
+          <div class="card-body">
+            <h5 class="card-title fs-4">Delicious Berger</h5>
+            <p class="card-text">
+              Burgers have transcended their status as simple fast food to
+              become a beloved culinary masterpiece that satisfies cravings and
+              brings joy to many.
+            </p>
+            <a href="#" class="btn btn-dark">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card pt-2" style="width: 18rem">
+          <img src="./image/momo-7.webp" class="custom-image" alt="berger-1" />
+          <div class="card-body">
+            <h5 class="card-title fs-4">Delicious Berger</h5>
+            <p class="card-text">
+              Burgers have transcended their status as simple fast food to
+              become a beloved culinary masterpiece that satisfies cravings and
+              brings joy to many.
+            </p>
+            <a href="#" class="btn btn-dark">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card pt-2" style="width: 18rem">
+          <img src="./image/momo-8.webp" class="custom-image" alt="berger-1" />
+          <div class="card-body">
+            <h5 class="card-title fs-4">Delicious Berger</h5>
+            <p class="card-text">
+              Burgers have transcended their status as simple fast food to
+              become a beloved culinary masterpiece that satisfies cravings and
+              brings joy to many.
+            </p>
+            <a href="#" class="btn btn-dark">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card pt-2" style="width: 18rem">
+          <img
+            src="./image/momo-1.webp"
+            class="custom-image"
+            alt="berger-1"
+          />
+          <div class="card-body">
+            <h5 class="card-title fs-4">Delicious Berger</h5>
+            <p class="card-text">
+              Burgers have transcended their status as simple fast food to
+              become a beloved culinary masterpiece that satisfies cravings and
+              brings joy to many.
+            </p>
+            <a href="#" class="btn btn-dark">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card pt-2" style="width: 18rem">
+          <img
+            src="./image/momo-10.webp"
+            class="custom-image"
+            alt="berger-1"
+          />
+          <div class="card-body">
+            <h5 class="card-title fs-4">Delicious Berger</h5>
+            <p class="card-text">
+              Burgers have transcended their status as simple fast food to
+              become a beloved culinary masterpiece that satisfies cravings and
+              brings joy to many.
+            </p>
+            <a href="#" class="btn btn-dark">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card pt-2" style="width: 18rem">
+          <img
+            src="./image/momo-11.webp"
+            class="custom-image"
+            alt="berger-1"
+          />
+          <div class="card-body">
+            <h5 class="card-title fs-4">Delicious Berger</h5>
+            <p class="card-text">
+              Burgers have transcended their status as simple fast food to
+              become a beloved culinary masterpiece that satisfies cravings and
+              brings joy to many.
+            </p>
+            <a href="#" class="btn btn-dark">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card pt-2" style="width: 18rem">
+          <img
+            src="./image/momo-1.webp"
+            class="custom-image"
+            alt="berger-1"
+          />
+          <div class="card-body">
+            <h5 class="card-title fs-4">Delicious Berger</h5>
+            <p class="card-text">
+              Burgers have transcended their status as simple fast food to
+              become a beloved culinary masterpiece that satisfies cravings and
+              brings joy to many.
+            </p>
+            <a href="#" class="btn btn-dark">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card pt-2" style="width: 18rem">
+          <img src="./image/momo-2.webp" class="custom-image" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title fs-4">Delicious Berger</h5>
+            <p class="card-text">
+              Burgers have transcended their status as simple fast food to
+              become a beloved culinary masterpiece that satisfies cravings and
+              brings joy to many.
+            </p>
+            <a href="#" class="btn btn-dark">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card pt-2" style="width: 18rem">
+          <img src="./image/momo-9.webp" class="custom-image" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title fs-4">Delicious Berger</h5>
+            <p class="card-text">
+              Burgers have transcended their status as simple fast food to
+              become a beloved culinary masterpiece that satisfies cravings and
+              brings joy to many.
+            </p>
+            <a href="#" class="btn btn-dark">Order Now</a>
+          </div>
+        </div>
+
+        <div class="card pt-2" style="width: 18rem">
+          <img src="./image/momo-6.webp" class="custom-image" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title fs-4">Delicious Berger</h5>
+            <p class="card-text">
+              Burgers have transcended their status as simple fast food to
+              become a beloved culinary masterpiece that satisfies cravings and
+              brings joy to many.
+            </p>
+            <a href="#" class="btn btn-dark">Order Now</a>
+          </div>
+        </div>
+      </section>
+    </section>
+    <div class="berger-section-see-more-button text-center my-5">
+      <button class="btn btn-dark">View More</button>
+    </div>
+    <!-- Services section ends here -->
+
+    <!-- about section start from here  -->
+    <section class="bg-dark">
+      <section
+        class="about-section container mx-auto row row-cols-sm-1 row-cols-md-2 row-cols-lg-2"
+      >
+        <section class="about-image-section">
+          <img src="./image/momo-cartoon.png" class="w-100" alt="About section image" />
+        </section>
+        <section class="text-section">
+          <h3 class="text-white h3-about-text fw-semibold">We Are Delicious Berger'r</h3>
+          <p class="text-white py-2">
+            Burgers have long been a beloved staple in global cuisine,
+            celebrated for their versatility and rich flavors. Whether it’s the
+            classic cheeseburger or inventive gourmet varieties, the art of
+            crafting the perfect burger requires a blend of quality ingredients,
+            cooking techniques, and creativity. Here’s a guide on how to make a
+            delicious burger that will impress your friends and family.While
+            traditionally associated with fast food, the burger has evolved into
+            a culinary masterpiece that can be crafted to suit gourmet tastes.
+            Here, we explore the components that make a burger truly delicious
+            and share tips for creating your own perfect burger at home.
+          </p>
+          <section class="about-section-btn">
+            <button class="btn btn-primary">Read More</button>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-- about section ends here -->
+
+    <!-- contact section start from here  -->
+    <section
+      class="contact-section py-5 container mx-auto row row-cols-sm-1 row-cols-md-1 row-cols-lg-2"
+    >
+      <div class="form-section">
+        <form class="border-1 border rounded-2 p-2">
+          <h3 class="text-center h3-about-text fw-semibold">Book A Table</h3>
+          <input
+            type="text"
+            class="form-control my-3 mt-0 form-item-height"
+            placeholder="Name"
+          />
+          <input
+            type="number"
+            name="number"
+            class="form-control my-3 form-item-height"
+            id="number"
+            placeholder="Phone Number +880: "
+          />
+          <input
+            type="email"
+            name="email"
+            class="form-control my-3 form-item-height"
+            id="email"
+            placeholder="Your Email"
+          />
+          <input
+            type="date"
+            name="date"
+            id="date"
+            class="form-control form-item-height"
+          />
+          <input
+            type="number"
+            class="form-control my-3 form-item-height"
+            placeholder="How many persons?"
+          />
+          <div class="contact-btn">
+            <button class="btn btn-dark">Book Now</button>
+          </div>
+        </form>
+        <section class="map-section"></section>
+      </div>
+      <section class="map-section col">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.063148742546!2d89.4208960025748!3d23.49423484055093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe566c0ea663a7%3A0x153d403bf0dbe65!2sNomani%20Maidan!5e0!3m2!1sen!2sbd!4v1730887671999!5m2!1sen!2sbd"
+          class="rounded-2 border w-100 h-100"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </section>
+    <!-- contact section ends here -->
+
+    <!-- client review section start from here  -->
+    <section class="client-review">
+      <h3 class="h3-about-text text-center my-5 fw-semibold">
+        What out Happy Customer Says
+      </h3>
+      <div
+        id="carouselExampleInterval-1"
+        class="carousel slide container p-5"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active slider-image-section"
+            data-bs-interval="3000"
+          >
+            <img
+              src="./image/momo-5.webp"
+              class="d-block w-100 h-100 food-img rounded-4 food-img-1"
+              alt="Food 1"
+            />
+            <div class="carousel-caption d-none d-md-block my-5">
+              <img
+                src="image/abid.webp"
+                class="customer-image"
+                alt="customer image"
+              />
+              <p class="fs-1 my-4 fw-bold">Abid Haider</p>
+              <p class="w-75 mx-auto fs-5">
+                Burgers have long been a beloved staple in global cuisine,
+                celebrated for their versatility and rich flavors.
+              </p>
+            </div>
+          </div>
+          <div
+            class="carousel-item slider-image-section"
+            data-bs-interval="3000"
+          >
+            <img
+              src="./image/momo-8.webp"
+              class="d-block w-100 h-100 rounded-4 food-img food-img-1"
+              alt="Food 2"
+            />
+            <div class="carousel-caption d-none d-md-block my-5">
+              <img
+                src="image/sajib.webp"
+                class="customer-image"
+                alt="customer image"
+              />
+              <p class="fs-1 my-4 fw-bold">Sajib Roy</p>
+              <p class="w-75 mx-auto fs-5">
+                Burgers have long been a beloved staple in global cuisine,
+                celebrated for their versatility and rich flavors.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="carousel-item slider-image-section"
+            data-bs-interval="3000"
+          >
+            <img
+              src="./image/momo-2.webp"
+              class="d-block w-100 h-100 food-img rounded-4 food-img-1"
+              alt="Food 3"
+            />
+            <div class="carousel-caption d-none d-md-block my-5">
+              <img
+                src="image/touhid-sir.webp"
+                class="customer-image"
+                alt="customer image"
+              />
+              <p class="fs-1 my-4 fw-bold">MD Touhid Hossain</p>
+              <p class="w-75 mx-auto fs-5">
+                Burgers have long been a beloved staple in global cuisine,
+                celebrated for their versatility and rich flavors.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="carousel-item slider-image-section"
+            data-bs-interval="3000"
+          >
+            <img
+              src="./image/momo-11.webp"
+              class="d-block w-100 h-100 food-img rounded-4 food-img-1"
+              alt="Food 3"
+            />
+            <div class="carousel-caption d-none d-md-block my-5">
+              <img
+                src="image/samad.webp"
+                class="customer-image"
+                alt="customer image"
+              />
+              <p class="fs-1 my-4 fw-bold">Abdus Samad</p>
+              <p class="w-75 mx-auto fs-5">
+                Burgers have long been a beloved staple in global cuisine,
+                celebrated for their versatility and rich flavors.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval-1"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval-1"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- client review section ends here -->
+
+    <!-- contact section start from here      -->
+    <section class="contact-section bg-dark">
+      <div class="container-contact container mx-auto text-center py-4 row row-cols-sm-1 row-cols-lg-2 row-cols-md-2">
+        <section class="contact-us gap-2">
+          <h4 class="fs-3 text-white h3-about-text">Contact Us</h4>
+          <i class="fa-solid fa-phone text-white me-2"></i><a href="tel:+8801601918284" class="text-decoration-none text-white">01601-918284</a><br>
+          <i class="fa-solid fa-envelope text-white me-2"></i><a href="mailto:momoscounter@gmail.com" class="text-decoration-none text-white">momoscounter@gmail.com</a>
+          <address class="text-white mt-3">
+            Nomani Maidan, Magura, Khulna.
+          </address>
+        </section>
+        <section class="opening-time">
+          <h4 class="fs-3 text-white h3-about-text">Opening Hours</h4>
+          <p class="text-white">Everyday</p>
+          <p class="text-white">10.00 Am - 10.00 Pm</p>
+        </section>
+      </div>
+    </section>
+    <!-- contact section ends here     -->
+
+    <!-- footer section start from here  -->
+     <footer class="bg-dark">
+      <p class="text-white text-center mb-0 py-4 border-top border-white">&copy; 2024 All Rights Reserved By Abid Haider</p>
+     </footer>
+    <!-- footer section ends here -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
