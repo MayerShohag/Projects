@@ -1,2 +1,3 @@
 MERN Stack Web Development Projects are available live link here...
 1. go live : https://day24challengebyshohag.netlify.app/ <br/>
+2. go live : https://day25challengebyshohag.netlify.app/ <br/>
